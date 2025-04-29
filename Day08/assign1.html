@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .parent{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        background-color: blue;
+        height: 60px;
+        color: white;
+    }
+    .message{
+        background-color: aliceblue ;
+        flex: auto;
+        
+    }
+    .child{
+        background-color: antiquewhite;
+        display: flex;
+        height: 60px;
+    }
+    .child1{
+        flex: 1;
+    }
+.send{
+    width: 100px;
+}
+</style>
+<body>
+    <div class="parent">
+        <div class="header">Chat header</div>
+        <div class="message">Chat Message</div>
+        <div class="child">
+            <input type="text" placeholder="Type a message ..." class="child1"
+            ">
+            <button class="send">Send</button>
+        </div>
+    </div>
+</body>
+</html>

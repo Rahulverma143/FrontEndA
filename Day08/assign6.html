@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .auto {
+        background-color: blue;
+        display: flex;
+        width: 30vh;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .parentp{
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 50vh;
+    }
+
+    .padding {
+        background-color: green;
+        height: 20vh;
+        width: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+
+<body>
+    <div class="parentp">
+        <div class="padding">
+            <div>padding
+                <div class="auto">
+                    <div>auto-x-auto</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

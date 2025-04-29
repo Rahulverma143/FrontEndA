@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .child {
+        background-color: black;
+        height: 50vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .margin {
+        background-color: green;
+        height: 40vh;
+        width: 70%;
+        padding: 5px;
+        border-style: dashed;
+    }
+
+    .border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .border1 {
+        background-color: palegreen;
+        height: 30vh;
+        width: 70%;
+        padding: 5px;
+        margin: 15px;
+        border: 2px solid black;
+    }
+
+    .padding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .padding1 {
+        background-color: pink;
+        height: 20vh;
+        width: 70%;
+        padding: 5px;
+        margin: 15px;
+        border: 2px solid;
+        border-style: dashed;
+    }
+    .auto{
+        background-color: violet;
+        height: 10vh;
+        width: 80%;
+        padding: 5px;
+        margin: 15px;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-weight: bold; */
+        font-size: larger;
+
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="margin">margin
+                <div class="border">
+                    <div class="border1">border
+                        <div class="padding">
+                            <div class="padding1">padding
+                                <div class="auto">auto x auto</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

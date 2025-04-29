@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 2px;
+        padding: 5px;
+    }
+    .parent{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 10px;
+    }
+    .logo{
+        font-size: large;
+        font-weight: bold;
+    }
+    .child{
+        /* background-color: red; */
+        display: flex;
+        gap: 10px;
+        color: white;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="logo">logo</div>
+        <div class="child">
+            <div>Home</div>
+            <div>Shop</div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+    </div>
+</body>
+</html>

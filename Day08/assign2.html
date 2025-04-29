@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        /* height: 200px; */
+        border: 1px solid;
+        padding: 10px;
+    }
+    .image{
+        /* width: 200px; */
+        height: 200px;
+       border: 1px solid;
+    }
+    .child{
+        flex: 1;
+        padding: 15px;
+    }
+</style>
+<body>
+    <div class="header">
+  <div class="parent">
+    <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8nTxceDI4X8mzusZWm9Luzlx8mMqL7CKTkA&s" alt="Image not found" width="200px" height="200px">
+    </div>
+    <div class="child">
+        <h2>Product Name</h2> <br>
+        <p>Some details about the product</p> <br>
+        <button>Add to Cart</button>
+    </div>
+</div>
+  </div>
+</body>
+</html>
