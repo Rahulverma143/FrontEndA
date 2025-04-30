@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        background-color: black;
+        width: 300px;
+    }
+
+    .header {
+        background-color: #d90429;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -20px;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 4px solid #111;
+        position: absolute;
+        bottom: -50px;
+    }
+
+    .body {
+        padding: 60px;
+        text-align: center;
+    }
+
+    .name {
+        font-size: large;
+        font-weight: bold;
+        color: white;
+    }
+
+    .child {
+        margin: 5px;
+        font-size: large;
+        color: white;
+    }
+
+    .follow {
+        margin: 5px;
+        background: blue;
+        width: 50%;
+        padding: 5px;
+        border-radius: 30px;
+        border: 1px solid black;
+        color: white;
+
+    }
+
+    .child1 {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+        font-size: large;
+        color: white;
+    }
+    .skill{
+      text-align: start;
+    }
+
+    .html {
+        background-color: yellowgreen;
+        width: 95%;
+        margin: 10px;
+    }
+
+    .css {
+        background-color: grey;
+        width: 90%;
+        /* border-radius: 10%; */
+        margin: 10px;
+        
+    }
+
+    .js {
+        background-color: green;
+        width: 75%;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div class="card">.
+        <div class="header">
+            <img src="./image.jpg" alt="image not found" class="image">
+        </div>
+        <div class="body">
+            <div class="name">Rahul Verma</div>
+            <div class="child">🫂 90</div>
+            <button class="follow">Follow 😉</button>
+            <div class="child1">
+                <div>🖋️ 29</div>
+                <div>📁 0</div>
+                <div>💬 0</div>
+            </div>
+            <div class="skill">
+                <div class="html">HTML5</div>
+                <div class="css">CSS3</div>
+                <div class="js">JAVASCRIPT</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
