@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body{
+       background-color: black;
+    }
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 50px 50px rgb(14, 113, 36);
+}
+    .product-card {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #723737;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 8px 8px 5px rgb(92, 20, 95);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      cursor: pointer;
+      /* transform: scale(1.2); */
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .product-description {
+      font-size: 14px;
+      color: #acb6d4;
+      margin-bottom: 10px;
+      
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #a6c6b6;
+      margin-bottom: 15px;
+    }
+
+    .product-btn {
+      padding: 10px 15px;
+      background-color: #b728b5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-btn:hover {
+      background-color: #4b138c;
+    }
+  </style>
+
+
+  <body>
+    <div class="header">
+         <div class="product-card">
+        <img class="product-image" src="https://media.istockphoto.com/id/1633583827/photo/young-boy-listening-music-and-dancing-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=OyZ6krUUy6SYwnaEcbCmh7OajTE_NLNXPbeTkgI8C2U=">
+        <div class="product-details">
+          <div class="product-title">Wireless Headphones</div>
+          <div class="product-description">
+            High-quality wireless headphones with noise cancellation and long battery life.
+          </div>
+          <div class="product-price">$79.99</div>
+          <button class="product-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+   
+    
+  </body>
+</html>
