@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Basic Background Colors:
+Use predefined color names from the Tailwind color palette -->
+
+    <div class="bg-red-500 text-white p-4">Red Background</div>
+<div class="bg-blue-500 text-white p-4">Blue Background</div>
+<div class="bg-green-500 text-white p-4">Green Background</div>
+<div class="bg-yellow-500 text-black p-4">Yellow Background</div>
+<div class="bg-gray-500 text-white p-4">Gray Background</div>
+
+<!-- Shades of Colors:
+Each color in Tailwind has multiple shades ranging from 50 (lightest) to 900 (darkest). -->
+
+<div class="bg-blue-100 p-4">Blue 100</div>
+<div class="bg-blue-300 p-4">Blue 300</div>
+<div class="bg-blue-500 p-4">Blue 500</div>
+<div class="bg-blue-700 text-white p-4">Blue 700</div>
+<div class="bg-blue-900 text-white p-4">Blue 900</div>
+
+<!-- Transparent Background:
+Use bg-transparent to make the background transparent. -->
+
+<div class="bg-transparent border border-black p-4 m-4">Transparent Background</div>
+
+<!-- White and Black:
+Use bg-white for a white background and bg-black for black -->
+
+<div class="bg-white text-black p-4">White Background</div>
+<div class="bg-black text-white p-4">Black Background</div>
+
+<!-- Gradient Backgrounds:
+Tailwind supports gradients using the bg-gradient-to-[direction] utilities -->
+
+<div class="bg-gradient-to-r from-blue-500 to-green-500 text-white p-4 m-4 p-8 w-80">
+    Gradient: Blue to Green
+  </div>
+  <div class="bg-gradient-to-b from-purple-500 to-pink-500 text-white p-4 w-100 ">
+    Gradient: Purple to Pink
+  </div>
+  
+  <!-- Directions:
+to-t: Top
+to-b: Bottom
+to-l: Left
+to-r: Right
+to-tl: Top Left
+to-tr: Top Right
+to-bl: Bottom Left
+to-br: Bottom Right -->
+
+<!-- Arbitrary Colors:
+You can use custom colors by specifying them in square brackets. -->
+
+<div class="bg-[#ff6347] text-white p-4">Custom Color: Tomato (#ff6347)</div>
+<div class="bg-[rgb(255,200,100)] text-black p-4">Custom Color: RGB(255,200,100)</div>
+
+<!-- Opacity Control:
+Use bg-opacity-[value] to adjust the transparency of a background. -->
+
+<div class="bg-blue-500 bg-opacity-50 text-white p-4">50% Opacity</div>
+<div class="bg-green-500 bg-opacity-75 text-white p-4">75% Opacity</div>
+<div class="bg-red-500 bg-opacity-75 text-white p-4">25% Opacity</div>
+
+<!-- Combining Utilities: -->
+
+<div class="bg-yellow-300 border border-black p-4 m-4  rounded-lg">
+  Yellow Background with Border and Rounded Corners
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>
