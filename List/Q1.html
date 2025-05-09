@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Different List Styles:
+    1. Bullet Points (list-disc): -->
+
+
+    <ul class="list-disc pl-8">
+        <li>Bullet Point 1</li>
+        <li>Bullet Point 2</li>
+    </ul>
+
+    <!-- 2. No Style (list-none): -->
+
+
+    <ul class="list-none">
+        <li>No Style 1</li>
+        <li>No Style 2</li>
+    </ul>
+
+
+    <!-- Styling li Items:
+    Custom Text Color and Padding: -->
+
+
+    <ul class="list-disc pl-6">
+        <li class="text-blue-500">Blue Item</li>
+        <li class="text-red-500">Red Item</li>
+    </ul>
+
+    <!-- Add Hover Effects: -->
+
+
+    <ul class="list-disc pl-6">
+        <li class="hover:text-green-500 cursor-pointer">Hover to Change Color</li>
+        <li class="hover:text-purple-500 cursor-pointer">Hover to Change Color</li>
+    </ul>
+<!-- 
+    Add Icons to li Items: -->
+
+
+    <ul class="pl-6">
+        <li class="flex items-center gap-2">
+            <span>✔️</span> Completed Task
+        </li>
+        <li class="flex items-center gap-2">
+            <span>🔄</span> Pending Task
+        </li>
+    </ul>
+
+
+    <!-- Vertical and Horizontal Lists:
+    Vertical List (Default): -->
+
+
+    <ul class="list-disc pl-6">
+        <li>Vertical Item 1</li>
+        <li>Vertical Item 2</li>
+    </ul>
+
+    <!-- Horizontal List: -->
+
+
+    <ul class="flex space-x-4">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Explanation:
+    flex: Makes the list horizontal.
+    space-x-4: Adds spacing between list items.
+
+    Adding Dividers Between Items: -->
+
+
+    <ul class="list-none border-t border-gray-200">
+        <li class="py-2 border-b border-gray-200">Item 1</li>
+        <li class="py-2 border-b border-gray-200">Item 2</li>
+        <li class="py-2">Item 3</li>
+    </ul>
+
+<!-- 
+    Nested Lists: -->
+
+
+    <ul class="list-disc pl-6">
+        <li>Parent Item 1</li>
+        <li>Parent Item 2
+            <ul class="list-circle pl-6">
+                <li>Child Item 1</li>
+                <li>Child Item 2</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <!-- Advanced Styling Example: -->
+
+
+    <ul class="list-disc pl-6 text-lg text-gray-700">
+        <li class="hover:text-blue-500">Hover over this item</li>
+        <li class="hover:text-green-500">Hover over this item too</li>
+        <li>
+
+            <!-- Nested List: -->
+             
+            <ul class="list-circle pl-6 text-sm text-gray-500">
+                <li>Nested Item 1</li>
+                <li>Nested Item 2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</body>
+
+</html>
