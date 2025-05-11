@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 2. Max Height (max-h-) Utilities -->
+  <!-- <!-- These utilities set the maximum height of an element, restricting it from growing beyond a specific value. -->
+
+  <!-- Available Classes -->
+
+  <!-- 
+1. max-h-0: No height.
+2. max-h-full: Restricted to the parent element's height.
+3. max-h-screen: Restricted to the viewport height.
+Custom values using arbitrary values: max-h-[value]. -->
+
+  <br>
+  <!-- Examples
+Restrict Height to Viewport -->
+
+  <div class="max-h-screen overflow-y-scroll bg-slate-400">
+    Content here will scroll if it exceeds the viewport height.
+  </div>
+
+  <br>
+  <hr>
+  <br>
+  <!-- Custom Maximum Height -->
+
+  <div class="max-h-[400px] overflow-y-full bg-green-600">
+    This box will scroll if content exceeds 400px in height.
+  </div>
+
+  <br>
+  <hr>
+
+
+  <!-- 3. Combining Min and Max Height
+You can combine min-h- and max-h- to create elements with height ranges. -->
+  <!-- Examples -->
+
+  <div class="min-h-[200] max-h-[500] bg-yellow-500 overflow-y-scroll">
+    This box will be at least 200px tall but not exseed 500px. Scrollbars appear if content exceeds 500px. <br>
+    Eg. My name is rahul verma
+  </div>
+
+  <br>
+  <hr> <br>
+  <!-- 5. Practical Use Cases
+Hero Section -->
+
+  <div class="min-h-screen bg-blue-600 flex items-center justify-center text-white text-4xl font-bold ">
+    Full-screen hero section.
+  </div>
+
+  <br>
+  <hr><br>
+
+  <!-- Scrollable Content -->
+
+  <div class="max-h-[400px] overflow-y-auto bg-gray-500">
+    Scrollable box with a maximum height of 400px.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</body>
+
+</html>

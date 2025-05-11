@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 1. Setting a Minimum Height (min-h-)
+Use the min-h- utilities to ensure an element always has a minimum height, even if its content is less.
+Example: -->
+
+  <div class="min-h-[200px] bg-blue-500">
+    This box will always be at least 200px tall.
+  </div>
+
+  <!-- Here:
+min-h-[200px] ensures the box is at least 200px tall.
+Content can make it taller, but it won't shrink below 200px. -->
+  <br>
+  <hr>
+
+  <!-- 2. Setting a Maximum Height (max-h-)
+Use max-h- utilities to limit how tall an element can grow, regardless of its content.
+Example: -->
+
+  <div class="max-h-[400px] overflow-y-scroll bg-green-500">
+    This box has a maximum height of 400px. Scrollbars will appear if content overflows.
+  </div>
+
+  <!-- Here:
+max-h-[400px] restricts the height to 400px.
+overflow-y-scroll ensures overflowing content is scrollable. -->
+
+  <br>
+  <hr>
+
+  <div class="bg-yellow-600 h-full">
+    <h1>Rahul verma</h1>
+  </div>
+
+  <div class="bg-red-400 h-1/2">
+    <h1>My Name is rahul verma</h1>
+  </div>
+
+  <!-- Advance -->
+
+  <!-- 1. Min Height (min-h-) Utilities
+These utilities set the minimum height of an element, ensuring it doesn't shrink below a certain value.
+Available Classes
+min-h-0: No minimum height.
+min-h-full: At least as tall as the parent element.(part of the div)
+min-h-screen: At least as tall as the viewport.(puri screen)
+Custom values using arbitrary values: min-h-[value].
+Examples
+Set Minimum Height of Screen -->
+
+  <div class="min-h-screen bg-blue-500">
+    This box will always be as tall as the screen.
+  </div>
+
+  <!-- custom minimum height -->
+
+  <div class="min-h-[300px] bg-green-500">
+    This box will always be at least 300px tall.
+  </div>
+
+  <br>
+  <hr>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
+</html>
