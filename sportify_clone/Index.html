@@ -1,238 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/016/716/458/original/spotify-icon-free-png.png"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />    
-<title>Spotify</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"
+        href="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
 </head>
 
 <body class="bg-black h-screen flex flex-col">
-<div class=" h-15 flex gap-2">
-    <div class=" w-82 pl-5  ">
-        <img  src="https://logospng.org/download/spotify/logo-spotify-icon-4096.png" class="size-15">
-    </div>
-    <div class=" flex gap-5 flex-1 justify-center items-center">
-        <i class="fa fa-home text-white bg-black text-xl p-3 rounded-full" aria-hidden="true"></i>
-        <span class="bg-[#121212] p-3 text-white rounded-full p-3  w-150 flex items-center gap-5">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input class="text-xl focus:outline-none border-none focus:ring-0" type="text" placeholder="What do you want to play"/>
-            <i class="fa fa-folder ml-50" aria-hidden="true"></i>
-        </span> 
-    </div>
-    <div class=" w-200">
-        <ul class="flex justify-center items-center gap-20 h-15 ">
-            <li> <button class="bg-white text-2xl text-black pl-2 pr-2 rounded-full
-                font-bold transition duration-300 transform active:scale-94 cursor-pointer">Explore premium </button></li>
-            <li class="text-white text-xl"> <i class="fa-solid fa-download text-white"></i>
-                install App</li>
-            <li><i class=" text-xl fa-solid fa-bell text-white"></i></li>
-            <li><i class="text-xl fa-solid fa-people-group text-white"></i></li>
-            <li class="h-10 w-10 bg-red-500 rounded-full flex justify-center items-center font-bold">P</li>
-        </ul>
-    </div>
-</div>
-<div class=" flex flex-1  p-2 gap-2">
-    <div class=" w-82 ml-1 rounded-xl mt-1  bg-slate-900 ">
-        <div class="bg-[#121212] h-13 w-full flex justify-evenly items-center">
-            <h2 class="font-bold text-white text-xl">your library</h2>
-            <button class="bg-[#2a2a2a] p-1 text-white w-30 rounded-full text-xl transition duration-300 transform active:scale-94 cursor-pointer ">+ create</button>
-            <i class="fa-solid fa-up-right-and-down-left-from-center text-white text-xl"></i>
+    <!-- navbar -->
+    <div class="h-14 flex gap-2">
+        <div class="w-84">
+            <img class="h-15 w-15" src="https://i.pinimg.com/736x/45/cc/6c/45cc6c91692a3665d97b570a3272132a.jpg"
+                alt="" />
         </div>
-        <div class=" bg-[#121212] h-14 w-full flex  items-center gap-3">
-            <button  class="bg-[#2a2a2a] pt-1 pb-1 text-white w-30 ml-1 text-xl rounded-full">artist</button>
-            <button class="bg-[#2a2a2a] pt-1 pb-1  text-white w-30 rounded-full text-xl ">playlists</button>
+        <div class="flex flex-1 justify-center items-center gap-7">
+            <!-- home -->
+            <span class="bg-[#121212] w-10 h-10 flex justify-center items-center rounded-full hover:scale-105">
+                <i class="fas fa-home text-xl text-white"></i></span>
+            <!-- search -->
+
+            <span
+                class="bg-[#121212] rounded-2xl hover:scale-105 w-80 h-11 mt-1 rounded-3xl text-white flex justify-center items-center gap-5">
+                <i class="fas fa-search ml-3"></i><input class="w-80 border-none focus:outline-none focus:ring-0"
+                    type="text" placeholder="What do you want to play?" /><i class="far fa-folder-open mr-3"></i>
+            </span>
         </div>
-        <div class="h-14 bg-[#121212] flex justify-between items-center">
-            <i class="fa-solid fa-magnifying-glass text-white text-2xl pl-2"></i>
-            <p class="ml-42 text-white text-2xl">recents</p>
-            <i class="fa-solid fa-bars  text-white text-2xl pr-2"></i>
+        <div class="w-110 flex justify-center items-center gap-10">
+            <div class="flex gap-3 w-full">
+                <!-- explore -->
+                <span><button
+                        class="bg-white text-black px-2 py-2 rounded active:bg-white rounded-2xl text-sm hover:scale-105">
+                        <b>Explore Premium</b>
+                    </button></span>
+                <!-- install -->
+                <span class="bg-[#121212] text-white px-2 py-2 rounded active:bg-white rounded-2xl text-sm"><i
+                        class="fas fa-arrow-alt-circle-down text-white w-5 hover:scale-105"></i><button>Install
+                        App</button></span>
+            </div>
+            <span><i class="far fa-bell text-white hover:scale-105"></i></span>
+            <span><i class="fas fa-users text-white hover:scale-105"></i></span>
+            <span><button
+                    class="h-10 w-10 rounded-full bg-green-500 flex justify-center items-center shadow-lg shadow-[#121212] border-5 border-slate-500 hover:scale-105">
+                    <b>R</b>
+                </button></span>
         </div>
-        <div class="bg-[#121212] ">
-            <div class="max-h-[650px] overflow-y-scroll">
-                <ul>
-                    <li class=" h-17 flex items-center">
-                    <div class="h-13 w-13 rounded-full bg-blue-500
-                    bg-[url(https://static.vecteezy.com/system/resources/previews/000/285/437/original/heart-symbol-of-love-and-valentine-s-day-flat-red-icon-isolated-on-white-background-vector-illustration-vector.jpg)]
-                    bg-cover "></div>
-                    <div class="flex flex-col ml-5">
-                    <h1 class="text-xl text-white font-bold">Liked songs</h1>
-                    <p class="text-white text-lg">playlist. 3 songs</p>
+    </div>
+    <!-- mainbody -->
+    <div class="flex flex-1 gap-2 mt-2 mb-2">
+        <!-- leftsidebar -->
+        <div class="bg-[#121212] w-82 rounded-2xl ml-2 ">
+            <!-- create -->
+            <div class="h-14 text-white flex justify-evenly items-center position-fixed ">
+                <b>Your Library</b>
+                <div class="bg-[#1e1e1e] text-white px-3 py-2 rounded-full ml-15 hover:scale-105">
+                    <i class="fa-solid fa-plus text-white"></i>
+                    <button class="">Create</button>
                 </div>
+                <button class="hover:bg-[#1e1e1e] rounded-full p-2 hover:scale-105 text-sm"><i
+                        class="fa-solid fa-up-right-and-down-left-from-center ml-1 hover:scale-105"
+                        hover:scale-105></i></button>
+            </div>
+            <!-- playlist & artist -->
+            <div class="flex gap-3 p-1">
+                <div
+                    class="bg-[#1e1e1e] text-white w-23 h-7 rounded-full hover:scale-105 hover:cursor-pointer flex justify-center items-center">
+                    <button class="hover:cursor-pointer">playlists</button>
+                </div>
+                <div
+                    class="bg-[#1e1e1e] text-white w-23 h-7 rounded-full hover:scale-105 hover:cursor-pointer flex justify-center items-center">
+                    <button class="hover:scale-105">Artist</button>
+                </div>
+            </div>
+            <!-- search button -->
+            <div class="flex justify-between p-2 ">
+                <div><i class="fa-solid fa-magnifying-glass text-white hover:scale-105"></i></div>
+
+                <div class="text-white">
+                    Recent<i class="fa-solid fa-list text-white ml-2 hover:scale-105"></i>
+                </div>
+            </div>
+            <!-- song suggestions -->
+            <div class="h-116 overflow-y-auto overflow-x-hidden ">
+                <ul>
+                    <li class=" h-15 flex items-center  ">
+                        <div class=" hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                            <i class="fa-solid fa-heart text-red-500 text-2xl bg-white p-2 rounded-full ml-2"></i> <span
+                                class="flex-col ml-3 text text-white hover:text-green-500"></span>
+                        </div>
+                        <div>
+                            <span class=" flex text-white ml-6 ">
+                                <h2>Liked Songs</h2>
+                            </span>
+                            <span><i
+                                    class="fa-solid fa-thumbtack hover:text-green-500 text-white mr-2 rotate-45"></i></span>
+                            <span class="text-white hover:text-green-500 text-sm "> playlist. 38 songs</span>
+                        </div>
+
+
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://tse2.mm.bing.net/th/id/OIP.cmVIPEkiDad4zZM_A9pQjgHaHa?cb=iwp1&rs=1&pid=ImgDetMain)] bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Badshah</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+                    <li class=" h-15 flex p-2 hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xFo84BikRdYIsg1NTX1a_xAu8rbcFaW6xw&s)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Ninja</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class=" h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://static.toiimg.com/photo/59841716.cms)] bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Honey singh</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class="  h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white flex flex-col justify-center">
+                            <h2 class="">Arijit singh</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://tse1.mm.bing.net/th/id/OIP.DD8XTxEy8LaePtolmiQ__gHaEK?cb=iwp1&rs=1&pid=ImgDetMain)]
-                        bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Arjit singh</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://yt3.googleusercontent.com/3w6KyMJAlxuBwfsWeQEW_UVdSBJ3PaEJCCPSZOvCMI6dUC2TvNqH6hmWfmbM5UUQy1BkZWedjw=s900-c-k-c0x00ffffff-no-rj)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Arman malik</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://wallpapers.com/images/featured/darshan-raval-hd-in5z5f23jmlvwlqn.jpg)] bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Darshan rawal</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://i1.sndcdn.com/avatars-GBhEb4pyHIRKyPfO-9aDwAw-t240x240.jpg)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Shubh</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="bg-brown-900  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://images.indianexpress.com/2024/07/Rajesh-Khanna.jpg?resize=600,338)] bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Rajesh Khanna</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVN3D0So-n38ssvzjoMKgqDECSjiCOED3vVQ&s)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Diljit Dosanjh</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://tse3.mm.bing.net/th/id/OIP.6_tDbvmuCy1jY6dVzmaSfQHaEi?cb=iwp1&rs=1&pid=ImgDetMain)]  bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Neha kakkar</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://i.scdn.co/image/ab6761610000e5ebdbcc4ab55ee0cb7dd9a1a0bf)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Mankrith aulak</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://cdn.britannica.com/59/165759-050-30812DEE/Lata-Mangeshkar.jpg)]  bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Lata mangeshkar</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoDfrA7JJl8XtB-MnhJB8qsmjTfN4JBwtoQ&s)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Gurnazar</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://tse3.mm.bing.net/th/id/OIP.pX1HYV6yIomukm08Pz3MSwHaEo?cb=iwp1&rs=1&pid=ImgDetMain)]  bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Hanuman Chalisa</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://static.toiimg.com/thumb/imgsize-23456,msid-115474560,width-600,resizemode-4/115474560.jpg)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>A.R Rehman</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://tse3.mm.bing.net/th/id/OIP.5fIAc7S2UedZNhvB9m7G3wHaHa?cb=iwp1&rs=1&pid=ImgDetMain)]  bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Kishor kumar</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://yt3.googleusercontent.com/cI3RMhRcDJQg73GEBVYxW6rLZwIq_n5qZyE8IhUM6zJF5WOVpYPyEN2avZMF-2TDtCIFr9qogW4=s900-c-k-c0x00ffffff-no-rj)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Sunidhi Chauhan</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://i.ytimg.com/vi/oM_excViXds/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgQiguMA8=&rs=AOn4CLBdvggp2hkYjT41JuXjphYK5j3aUg)]  bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Sonu nigam</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/ad/c5/e8/adc5e88c-d2f5-96ee-fff8-ed4c151f51d4/mzl.vwqefurf.jpg/486x486bb.png)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Imran khan</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
-                    <li class="  h-17 flex items-center">
-                        <div class="h-13 w-13 rounded-full bg-blue-500
-                        bg-[url(https://th.bing.com/th/id/R.2488467a93b118041d920faba7f9e127?rik=qCpakM0O%2bNBocg&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-21%2fRapper-Emiway-Bantai-Widescreen-Wallpapers-51785.jpg&ehk=JLiro1JbVb5aKilFQNxSu88TOiPLlZ7GBccnyLHjRmg%3d&risl=&pid=ImgRaw&r=0)]  bg-cover"></div>
-                        <div class="flex flex-col ml-5">
-                            <h1 class="text-xl text-white font-bold">Emiway bantai</h1>
-                            <p class="text-white text-lg">playlist. 3 songs</p>
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105">
+                        <div
+                            class=" flex items-center  bg-[url(https://yt3.googleusercontent.com/ytc/AIdro_kiQJ0Hhp0O-tdaY1dy81-gSNujjccUlWstnpFr686ZlMk=s900-c-k-c0x00ffffff-no-rj)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Sidhu moosewala</h2>
+                            <p class="font-thin">Artist</p>
                         </div>
                     </li>
+
+
+                    <li class=" h-15 flex p-2  hover:bg-[#1e1e1e] rounded-2xl hover:scale-105  ">
+                        <div
+                            class=" flex items-center  bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmMiQvRKCXYcQS8u3iG23AD7c9_BYRhmngw&s)] h-11 w-11 bg-cover rounded-full">
+                        </div>
+                        <div class="p-2 ml-6 font-semibold text-white  flex flex-col justify-center">
+                            <h2>Karan aujhla</h2>
+                            <p class="font-thin">Artist</p>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
-    </div>
-      
-   
-    <div class=" flex-1  h-full rounded-xl pt-5 ">
-        <div class="h-10  flex items-center gap-5 ">
-            <button class="bg-[#2a2a2a]  text-white w-20 ml-10 rounded-full text-xl transition duration-300 transform active:scale-94 cursor-pointer ">All</button>
-            <button class="bg-[#2a2a2a]  text-white w-20 rounded-full text-xl transition duration-300 transform active:scale-94 cursor-pointer ">Musics</button>
-            <button class="bg-[#2a2a2a]  text-white w-20 rounded-full text-xl transition duration-300 transform active:scale-94 cursor-pointer ">Podcasts</button>
+        <!-- main -->
+        <div class="bg-[#121212] flex-1 rounded-2xl">
+            <!-- buttons -->
+            <div class="p-3 ">
+                <!-- all -->
+                <span class="ml-1">
+                    <button
+                        class="bg-[#1e1e1e] text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105">
+                        <b>All</b>
+                    </button>
+                </span>
+                <!-- music -->
+                <span class="ml-1">
+                    <button
+                        class="bg-[#1e1e1e] text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105">
+                        <b>Music</b>
+                    </button>
+                </span>
+                <!-- podcast -->
+                <span class="ml-1">
+                    <button
+                        class="bg-[#1e1e1e] text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105">
+                        <b>Podcast</b>
+                    </button>
+                </span>
+            </div>
+            <!-- name -->
+            <h2 class="text-white text-3xl p-4">Made For Devansh dayama</h2>
+            <!-- song pics -->
+            <!-- row-1 -->
+            <div class=" w-220 h-52 mb-7 ml-4 flex ">
+                <!-- first pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Pritam,Vishal</b></h2>
+                </div>
+                <!-- 2nd pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://i.scdn.co/image/ab67616d0000b2731344800458a38197bfc721f3)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Jhol</b></h2>
+                    <h2 class="text-sm text-white ml-3">Maanu,Annural khalid</h2>
+                </div>
+                <!-- 3rd pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://c.saavncdn.com/915/Raanjhan-From-Do-Patti-Hindi-2024-20241004153945-500x500.jpg)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Raanjhan(From"Do Patti")</b></h2>
+                    <h2 class="text-sm text-white ml-3">Sachet-parampara</h2>
+                </div>
+                <!-- 4th pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://filmfare.wwmindia.com/content/2025/feb/sanamterikasam241739595582.jpg)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Sanam Teri Kasam (Original Motion...</b></h2>
+                    <h2 class="text-sm text-white ml-3">Himesh Reshammiya,</h2>
+
+                </div>
+                <!-- 5th pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Glory</b></h2>
+                    <h2 class="text-sm text-white ml-3">Yo Yo Honey Singh</h2>
+                </div>
+            </div>
+            <!-- row-2 -->
+            <div class=" w-220 h-50 ml-4 flex">
+                <!-- first pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://m.media-amazon.com/images/S/pv-target-images/f660a95899f7324b8593291348f78f551f32c1a40304042a43195ca71eb92931.jpg)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Aashiqui 2</b></h2>
+                    <h2 class="text-sm text-white ml-3">mithoon,Ankit Tiwari,Jeet Gannguli</h2>
+                </div>
+                <!-- 2nd pic -->
+                <div class="p-3 hover:scale-105 ">
+                    <div
+                        class="h-35 w-38 bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0AI7WzJ8FuT0U4Di2jUSoeKNAfX_ccDNCA&s)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Diljit Dosanjh</b></h2>
+                    <h2 class="text-sm text-white ml-3">Meet Bros, Bilal Saeed an....</h2>
+                </div>
+                <!-- 3rd pic -->
+                <div class="p-3 hover:scale-105 ">
+                    <div
+                        class="h-35 w-38 bg-[url(https://blackhattalent.com/wp-content/uploads/2024/07/Neha-Kakkar1.jpeg)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Neha Kakkar</b></h2>
+                    <h2 class="text-sm text-white ml-3">Tony kakkar,Yo Yo Honey Singh</h2>
+                </div>
+                <!-- 4th pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://c.ndtvimg.com/2024-11/ee81sve_hilarious-indian-mom-logics-on-diets-a-reel-by-rj-karishma_625x300_15_November_24.jpg)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b></b></h2>
+                    <h2 class="text-sm text-white ml-3">Naye India gaano ka khazana, featuring..... </h2>
+
+                </div>
+                <!-- 5th pic -->
+                <div class="p-3 hover:scale-105">
+                    <div
+                        class="h-35 w-38 bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TWkW0HnFTkU7AlgRPbwtTIKrv3nuTAKPlw&s)] bg-cover">
+                    </div>
+                    <h2 class="text-white font-minbold mt-2 ml-3"><b>Badshah</b></h2>
+                    <h2 class="text-sm text-white ml-3">Yo Yo Honey Singh Colab</h2>
+                </div>
+            </div>
         </div>
-        <!-- first o shera wali-->
-            <div class="flex justify-between  mt-10 ml-7 mr-7 gap-10">
-                <div class="h-90 w-65   hover:bg-[#121212] hover:rounded-xl">
-                    
-                    <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e0253d3a3807fc9c976b26e2a4e.png" alt="tum tak"/>
-                    <div class="ml-6 mt-5">
-                    <h1 class="font-bold text-xl text-white">o shera teer te taj</h1>
-                    <p class="text-white text-xl opacity-70">sangtar,sashwat</p>
+        <!-- rightsidebar -->
+        <div class="bg-[#121212] w-64 rounded-2xl mr-2 ">
+            <div class="flex">
+                <div class="p-3 ">
+                    <span>
+                        <button
+                            class=" text-white px-2 py-2 rounded hover:bg-white hover:text-black rounded-2xl text-sm hover:scale-105">love
+                            <i class="fas fa-heart text-red-500"></i></button>
+                    </span>
                 </div>
+                <div class="p-6 ml-11">
+                    <span><i class="fa-solid fa-ellipsis text-white ml-4 hover:scale-105"></i></span>
+                    <span><i
+                            class="fa-solid fa-up-right-and-down-left-from-center text-white text-xs ml-8 ml-1 hover:scale-105"></i></span>
                 </div>
-                <div class="h-90 w-65  hover:bg-[#121212] hover:rounded-xl">
-                    <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e026db30265de3e48888ad79aa7.png" alt="tum tak"/>
-                    <div class="ml-6 mt-5">
-                    <h1 class="font-bold text-xl text-white">mauna lao</h1>
-                    <p class="text-white text-xl opacity-70">Akshay rajora</p>
+            </div>
+
+            <!-- pic -->
+            <div>
+                <div
+                    class="bg-blue-400 h-105 rounded-2xl w-57 ml-3.5 bg-[url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/jab-we-met-et00000182-1681714389.jpg)] bg-cover ">
                 </div>
+                <div class="flex">
+                    <div>
+                        <h2 class="text-white font-minbold mt-2 ml-4 text-3xl"><b>Tum Se Hi</b></h2>
+                        <h2 class="text-sm text-white ml-4">Pritam,Mohit Chauhan,Irs </h2>
+                    </div>
+                    <i class="fa-solid fa-upload text-white mt-8 ml-6 hover:scale-110"></i>
+                    <span
+                        class="bg-green-500 rounded-full w-4 h-4 flex justify-center items-center text-xs mt-8 ml-3 hover:scale-110"><i
+                            class="fa-solid fa-check"></i>
+                    </span>
                 </div>
-                <div class="h-90 w-65  hover:bg-[#121212] hover:rounded-xl">
-                    <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e02caee3f6563eb76d2fa902561.png" alt="tum tak"/>
-                    <div class="ml-6 mt-5">
-                    <h1 class="font-bold text-xl text-white">Play date</h1>
-                    <p class="text-white text-xl opacity-70">Rajesh khanna</p>
-                </div>
-                </div>
-                <div class="h-90 w-65  hover:bg-[#121212] hover:rounded-xl">
-                    <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e02e2366d89d38cbd4312f4f797.png" alt="tum tak"/>
-                    <div class="ml-6 mt-5">
-                    <h1 class="font-bold text-xl text-white">Hai junoon</h1>
-                    <p class="text-white text-xl opacity-70">Paritosh</p>
-                </div>
-                 </div> 
-                 </div>
-                 <!-- first o shera ki next line div -->
-                 <div class="flex justify-between  mt-10 ml-7 mr-7 gap-10">
-                    <div class="h-90 w-65   hover:bg-[#121212] hover:rounded-xl">
-                        <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e02c45169492ebc6af70588df7d.png" alt="tum tak"/>
-                        <div class="ml-6 mt-5">
-                        <h1 class="font-bold text-xl text-white">Aarambh hai prachand</h1>
-                        <p class="text-white text-xl opacity-70">Gulaaal ji</p>
-                    </div>
-                    </div>
-                    <div class="h-90 w-65  hover:bg-[#121212] hover:rounded-xl">
-                        <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e02aad3f4b601ae8763b3fc4e88.png" alt="tum tak"/>
-                        <div class="ml-6 mt-5">
-                        <h1 class="font-bold text-xl text-white">Millionaire</h1>
-                        <p class="text-white text-xl opacity-70">Honey paji</p>
-                    </div>
-                    </div>
-                    <div class="h-90 w-65  hover:bg-[#121212] hover:rounded-xl">
-                        <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e02e7a80f2e7ff3ef311f16a442.png" alt="tum tak"/>
-                        <div class="ml-6 mt-5">
-                        <h1 class="font-bold text-xl text-white">Laal Pari</h1>
-                        <p class="text-white text-xl opacity-70">kishore kumar</p>
-                    </div>
-                    </div>
-                    <div class="h-90 w-65  hover:bg-[#121212] hover:rounded-xl">
-                        <img class="h-60 w-60 pl-6 pt-3 rounded-xl" src="ab67616d00001e02f000fdbe92e9a1058034fd33.png" alt="tum tak"/>
-                        <div class="ml-6 mt-5">
-                        <h1 class="font-bold text-xl text-white">Sanam Teri Kasam</h1>
-                        <p class="text-white text-xl opacity-70">AR. Rahman</p>
-                    </div>
-                     </div> 
-                     </div>
+
+
+
+            </div>
         </div>
-    
-    
-    <div class=" w-64 bg-slate-900  h-full rounded-xl ">
-        <img class="h-full" src="ab67616d00001e02773c5f60bcb309ef8802e4ef.png" alt="images"/>
+
     </div>
-</div>
-<div class="h-15 bg-blue-900"></div>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- playbar -->
+    <div class="h-15   flex">
+        <!-- left-corner -->
+        <div class="flex">
+            <div
+                class=" h-13 mt-1 w-13 ml-4 bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRogU-aeZjIUojLXjUPP3BmH24-kFACeevhqA&s)] bg-cover">
+            </div>
+            <div>
+                <h2 class="text-white font-minbold mt-2 ml-4 "><b>Tum Se Hi</b></h2>
+                <h2 class="text-sm text-white ml-4">Pritam,Mohit Chauhan,Irs </h2>
+
+            </div>
+            <span
+                class="bg-green-500 rounded-full w-4 h-4 flex justify-center items-center text-xs mt-5 ml-3 hover:scale-110"><i
+                    class="fa-solid fa-check"></i>
+            </span>
+        </div>
+        <!-- middle-design -->
+
+        <div class="w-140 h-15 ml-53 flex flex-col">
+            <span class=" p-  ml-5 flex">
+                <div><i class="far fas fa-fast-backward text-white text-l ml-58  "></i></div>
+                <div><i class="far fa-play-circle text-white text-l ml-3  "></i></div>
+                <div><i class="far fas fa-fast-forward text-white text-l ml-3 "></i></div>
+            </span>
+
+            <span class="flex  h-4 mt-2 ml-8 text-2xl mb-4">
+                <span class="text-white text-xs  ">1:21</span>
+                <div class="w-full h-1 mt-1.5 ml-2 mr-2 bg-gray-200 rounded-full hover:bg[#1e1e1e]"> </div>
+                <span class="text-white text-xs">5:30</span>
+            </span>
+        </div>
+        <!-- right-design -->
+        <div class=" h-11 w-50 ml-70 mt-3  flex">
+            <i class="fa-solid fa-microphone text-white mt-3 mr-2"></i>
+            <i class="fa-solid fa-volume-high text-white mt-3 "></i>
+            <div class="w-30 h-1 mt-2 ml-2 mr-2 bg-gray-200 rounded-full hover:bg[#1e1e1e]  ml-3 mt-4.5"> </div>
+            <i class="fa-solid fa-expand text-white mt-3 ml-2"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
+
 </html>
