@@ -1,0 +1,19 @@
+   ->  Variables in JavaScript are containers used for storing data values. They are essential for holding information that can be referenced and manipulated within a program.
+
+
+    ->   Declaration: 
+ -> Variables are declared using the keywords var, let, or const. 
+1. var: This keyword declares a variable with function-scoped or globally-scoped behavior. It allows redeclaration and reassignment. 
+
+2. let: Introduced in ES6, this keyword declares a block-scoped variable. It does not allow redeclaration within the same scope but permits reassignment.
+  -> The let keyword was introduced in ES6 (2015)
+  -> Variables declared with let have Block Scope
+  -> Variables declared with let must be Declared before use
+  -> Variables declared with let cannot be Redeclared in the same scope
+3. const: This keyword declares a block-scoped variable that cannot be reassigned after its initial assignment.
+  -> The const keyword was introduced in ES6 (2015)
+  -> Variables defined with const cannot be Redeclared
+  -> Variables defined with const cannot be Reassigned
+  -> Variables defined with const have Block Scope
+-> Assignment:
+    Values are assigned to variables using the equal sign (=).
