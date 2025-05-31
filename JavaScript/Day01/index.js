@@ -4,6 +4,7 @@ console.log("I love js!");
 
 fullName = "Rahul verma ";
 console.log(fullName);
+
 age = 24;
 console.log(age);
 console.log( typeof fullName); 
