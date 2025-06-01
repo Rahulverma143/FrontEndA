@@ -1,0 +1,12 @@
+Operators
+-> Javascript operators are used to perform different types of mathematical and logical computations.
+-> JavaScript operators are symbols or keywords used to perform operations on values and variables. They are the building blocks of JavaScript expressions and can manipulate data in various ways.
+1. Arithmetic Operators:
+-> Arithmetic operators perform arithmetic on numbers (literals or variables).
+-> A typical arithmetic operation operates on two numbers.
++: Addition, -: Subtraction, *: Multiplication, /: Division, %: Modulus (remainder), **: Exponentiation, ++: Increment, and --: Decrement.
+--> The Assignment Operator (=) assigns a value to a variable:
+
+2. Assignment Operators: 
+-> Assign values to variables: They can also perform operations like addition or multiplication before assigning the value. 
+(=, +=, -=, *=, /=, %=).

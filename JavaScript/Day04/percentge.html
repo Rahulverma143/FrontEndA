@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let per = prompt("Enter the first value");
+        switch(true){
+            case per>=80 && per<=100:
+                alert(`Grade A`);
+                break;
+
+                case per>=60 && per<=80:
+                alert(`Grade B`);
+                break;
+
+                case per>=40 && per<=60:
+                alert(`Grade C`);
+                break;
+
+                case per>=33 && per<=40:
+                alert(`Grade D`);
+                break;
+
+                default:
+                    document.write("invalid percentage");
+        }
+    </script>
+</body>
+</html>

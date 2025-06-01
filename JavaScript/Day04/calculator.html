@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let num1 =prompt("Enter the first value");
+    let num2 =prompt("Enter the secomnd value");
+    let oper =prompt("+, -, /, *");
+
+    switch(oper){
+        case "+" :
+        var res = parseInt(num1) + parseInt(num2).toFixed(1);
+        alert(`${num1} + ${num2} = ${res}`);
+        break;
+
+
+
+        
+        case "-" :
+        var res = parseFloat(num1) - parseFloat(num2);
+        alert(`${num1} - ${num2} = ${res}`);
+        break;
+
+        case "*" :
+        var res = parseInt(num1) * parseInt(num2);
+        alert(`${num1} * ${num2} = ${res}`);
+        break;
+
+        case "/" :
+        var res = parseInt(num1) / parseInt(num2);
+        alert(`${num1} / ${num2} = ${res}`);
+        break;
+
+        default : 
+        document.write("invalid calculation")
+    }
+   </script> 
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num1 = prompt("Enter the first value");
+    let num2 = prompt("Enter the second value");
+    let oper = prompt("Enter operator (+, -, *, /)");
+
+    // Convert to numbers once
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
+    let res;
+
+    switch (oper) {
+        case "+":
+            res = num1 + num2;
+            alert(`${num1} + ${num2} = ${res.toFixed(1)}`);
+            break;
+
+        case "-":
+            res = num1 - num2;
+            alert(`${num1} - ${num2} = ${res.toFixed(1)}`);
+            break;
+
+        case "*":
+            res = num1 * num2;
+            alert(`${num1} * ${num2} = ${res.toFixed(1)}`);
+            break;
+
+        case "/":
+            if (num2 === 0) {
+                alert("Error: Division by zero");
+            } else {
+                res = num1 / num2;
+                alert(`${num1} / ${num2} = ${res.toFixed(1)}`);
+            }
+            break;
+
+        default:
+            alert("Invalid operator. Please use +, -, *, or /.");
+    }
+</script>
+
+</body>
+</html>
