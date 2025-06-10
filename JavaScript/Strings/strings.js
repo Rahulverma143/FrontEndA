@@ -3,7 +3,7 @@
 let str = "Rahulverma"; // we can write it like this 
 // let str = `rahulverma`;  // and alse write this 
 console.log(str.length); // 10
-console.log(str[5],str[4]);  // v L
+console.log(str[5],str[3]);  // v u
 
 
 
