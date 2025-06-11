@@ -1,0 +1,6 @@
+String  is mutable or  immutable 
+=> string is a immutable becouse it cannot change its original value
+
+1.) str.toLowerCase
+2.) str.toUpperCase
+3.) str.trim // removes whitespaces from start and end
