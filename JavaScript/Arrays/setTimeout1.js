@@ -14,6 +14,9 @@ function abc() {
   setTimeout(function () {
     console.log(`log print after 3 second`)
   }, 3000);
+   setInterval(function () {
+    console.log(`log print after 1 second`)
+  }, 1000);
   console.log(`end`)
 }
 abc()
