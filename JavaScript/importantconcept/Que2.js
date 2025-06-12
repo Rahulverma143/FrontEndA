@@ -17,3 +17,15 @@ console.log(5 - "144") // -139
 console.log("5" - "144") // -139
 console.log(typeof res);  // number
 console.log(typeof a ); // string
+
+
+// ------------------------------------
+console.log(3+3)  // 6
+console.log("3"+"3")  //33 
+console.log(3+ + "3"); // 6  
+console.log("3" +  + + "3");  // 33
+
+
+console.log("3" + "3" - 3)   // 30
+
+

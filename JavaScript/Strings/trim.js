@@ -40,3 +40,6 @@ console.log(results); // My name is Rahul Verma
 
 let resultss = "hello" + 123;
 console.log(resultss);  //hello123
+
+
+//  str.replce(searchVal,newVal   )
