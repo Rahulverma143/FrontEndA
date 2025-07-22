@@ -1,4 +1,4 @@
-// settimeout  execute unce after time delay
+// settimeout  execute once after time delay
 
 function abc() {
     console.log(`start`)
