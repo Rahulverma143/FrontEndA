@@ -14,11 +14,24 @@
 //   setTimeout(() => resolve("Success!"), 1000);
 // });
 // promise.then(result => console.log(result));
-let intervalId = setInterval(() => {
-  console.log("Repeating...");
+// let intervalId = setInterval(() => {
+//   console.log("Repeating...");
+// }, 1000);
+
+// setTimeout(() => {
+//   clearInterval(intervalId);
+//   console.log("Stopped interval");
+// }, 5000);
+
+// --------------------------
+
+let count = 5;
+let countdown = setInterval(() => {
+  console.log(count);
+  count--;
+  if (count < 0) {
+    clearInterval(countdown);
+    console.log("Time's up!");
+  }
 }, 1000);
 
-setTimeout(() => {
-  clearInterval(intervalId);
-  console.log("Stopped interval");
-}, 5000);
