@@ -61,11 +61,23 @@
 // -------------------------------------
 
 
-function reverseString(str) {
-  let reversed = "";
-  for (let char of str) {
-    reversed = char + reversed;
+// function reverseString(str) {
+//   let reversed = "";
+//   for (let char of str) {
+//     reversed = char + reversed;
+//   }
+//   return reversed;
+// }
+// console.log(reverseString("hello")); // "olleh"
+
+
+// ----------------------------------------
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
   }
-  return reversed;
+  return true;
 }
-console.log(reverseString("hello")); // "olleh"
+console.log(isPrime(7)); // true
