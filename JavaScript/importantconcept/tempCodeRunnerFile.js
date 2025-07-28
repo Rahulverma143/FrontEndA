@@ -25,13 +25,27 @@
 
 // --------------------------
 
-let count = 5;
-let countdown = setInterval(() => {
-  console.log(count);
-  count--;
-  if (count < 0) {
-    clearInterval(countdown);
-    console.log("Time's up!");
-  }
-}, 1000);
+// let count = 5;
+// let countdown = setInterval(() => {
+//   console.log(count);
+//   count--;
+//   if (count < 0) {
+//     clearInterval(countdown);
+//     console.log("Time's up!");
+//   }
+// }, 1000);
 
+// -----------------------------------------
+
+
+
+ function outer() {
+  let counter = 0;
+  return function inner() {
+    counter++;
+    return counter;
+  }
+}
+const count = outer();
+console.log(count()); // 1
+console.log(count()); // 2
