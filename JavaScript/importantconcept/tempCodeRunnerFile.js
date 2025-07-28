@@ -53,7 +53,19 @@
 
 // ----------------------------
 
-let p = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Done!"), 1000);
-});
-p.then(result => console.log(result));
+// let p = new Promise((resolve, reject) => {
+//   setTimeout(() => resolve("Done!"), 1000);
+// });
+// p.then(result => console.log(result));
+
+// -------------------------------------
+
+
+function reverseString(str) {
+  let reversed = "";
+  for (let char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
+}
+console.log(reverseString("hello")); // "olleh"
