@@ -115,9 +115,22 @@
 
 // ----------------------------
 
-function secondLargest(arr) {
-  let unique = [...new Set(arr)];
-  unique.sort((a, b) => b - a);
-  return unique[1];
+// function secondLargest(arr) {
+//   let unique = [...new Set(arr)];
+//   unique.sort((a, b) => b - a);
+//   return unique[1];
+// }
+// console.log(secondLargest([10, 20, 4, 45, 99])); // 45
+
+
+// ---------------------------------------
+
+function charCount(str) {
+  let count = {};
+  for (let char of str) {
+    count[char] = (count[char] || 0) + 1;
+  }
+  return count;
 }
-console.log(secondLargest([10, 20, 4, 45, 99])); // 45
+console.log(charCount("programming"));
+// { p:1, r:2, o:1, g:2, a:1, m:2, i:1, n:1 }
