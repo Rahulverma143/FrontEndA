@@ -94,11 +94,20 @@
 
 // -----------------------------------
 
-function findMax(arr) {
-  let max = arr[0];
-  for (let num of arr) {
-    if (num > max) max = num;
-  }
-  return max;
+// function findMax(arr) {
+//   let max = arr[0];
+//   for (let num of arr) {
+//     if (num > max) max = num;
+//   }
+//   return max;
+// }
+// console.log(findMax([3, 8, 2, 9, 4])); // 9
+
+
+// ----------------------------------------------
+
+function areAnagrams(str1, str2) {
+  const normalize = str => str.split("").sort().join("");
+  return normalize(str1) === normalize(str2);
 }
-console.log(findMax([3, 8, 2, 9, 4])); // 9
+console.log(areAnagrams("listen", "silent")); // true
