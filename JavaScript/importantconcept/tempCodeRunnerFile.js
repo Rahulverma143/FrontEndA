@@ -73,11 +73,24 @@
 
 // ----------------------------------------
 
-function isPrime(num) {
-  if (num <= 1) return false;
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) return false;
-  }
-  return true;
-}
-console.log(isPrime(7)); // true
+// function isPrime(num) {
+//   if (num <= 1) return false;
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) return false;
+//   }
+//   return true;
+// }
+// console.log(isPrime(7)); // true
+
+
+// ----------------------------------
+
+// function factorial(n) {
+//   if (n === 0) return 1;
+//   return n * factorial(n - 1);
+// }
+// console.log(factorial(5)); // 120
+
+
+// -----------------------------------
+
