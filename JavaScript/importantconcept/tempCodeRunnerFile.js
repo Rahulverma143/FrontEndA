@@ -106,8 +106,18 @@
 
 // ----------------------------------------------
 
-function areAnagrams(str1, str2) {
-  const normalize = str => str.split("").sort().join("");
-  return normalize(str1) === normalize(str2);
+// function areAnagrams(str1, str2) {
+//   const normalize = str => str.split("").sort().join("");
+//   return normalize(str1) === normalize(str2);
+// }
+// console.log(areAnagrams("listen", "silent")); // true
+
+
+// ----------------------------
+
+function secondLargest(arr) {
+  let unique = [...new Set(arr)];
+  unique.sort((a, b) => b - a);
+  return unique[1];
 }
-console.log(areAnagrams("listen", "silent")); // true
+console.log(secondLargest([10, 20, 4, 45, 99])); // 45
