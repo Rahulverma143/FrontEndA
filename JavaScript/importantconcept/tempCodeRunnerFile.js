@@ -125,12 +125,19 @@
 
 // ---------------------------------------
 
-function charCount(str) {
-  let count = {};
-  for (let char of str) {
-    count[char] = (count[char] || 0) + 1;
-  }
-  return count;
+// function charCount(str) {
+//   let count = {};
+//   for (let char of str) {
+//     count[char] = (count[char] || 0) + 1;
+//   }
+//   return count;
+// }
+// console.log(charCount("programming"));
+// // { p:1, r:2, o:1, g:2, a:1, m:2, i:1, n:1 }
+
+// -------------------------------
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
 }
-console.log(charCount("programming"));
-// { p:1, r:2, o:1, g:2, a:1, m:2, i:1, n:1 }
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1,2,3,4,5]
