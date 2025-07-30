@@ -137,7 +137,30 @@
 
 // -------------------------------
 
-function removeDuplicates(arr) {
-  return [...new Set(arr)];
-}
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1,2,3,4,5]
+// function removeDuplicates(arr) {
+//   return [...new Set(arr)];
+// }
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1,2,3,4,5]
+
+
+// ---------------------------------
+
+// arrow function 
+ 
+
+// 1. No parameters
+const greet = () => console.log("Hello!");
+greet();  // Hello!
+
+// 2. One parameter (no parentheses needed)
+const square = x => x * x;
+console.log(square(4)); // 16
+
+// 3. Multiple parameters
+const multiply = (a, b) => a * b;
+console.log(multiply(3, 5)); // 15
+
+// 4. With curly braces (requires return)
+const divide = (a, b) => {
+  return a / b;
+};
