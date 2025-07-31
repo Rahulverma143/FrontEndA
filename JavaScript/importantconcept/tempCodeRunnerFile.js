@@ -168,14 +168,31 @@
 
 // -------------------------------------
 
-function isPrime(n) {
-  if (n <= 1) return false;
+// function isPrime(n) {
+//   if (n <= 1) return false;
 
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) return false;
+//   for (let i = 2; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) return false;
+//   }
+//   return true;
+// }
+
+// console.log(isPrime(7)); // true
+// console.log(isPrime(10)); // false
+
+
+// --------------------------------
+
+function countVowels(str) {
+  let count = 0;
+  const vowels = 'aeiouAEIOU';
+
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
   }
-  return true;
+  return count;
 }
 
-console.log(isPrime(7)); // true
-console.log(isPrime(10)); // false
+console.log(countVowels("rahul verma")); // Output: 4
