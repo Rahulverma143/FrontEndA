@@ -183,16 +183,25 @@
 
 // --------------------------------
 
-function countVowels(str) {
-  let count = 0;
-  const vowels = 'aeiouAEIOU';
+// function countVowels(str) {
+//   let count = 0;
+//   const vowels = 'aeiouAEIOU';
 
-  for (let char of str) {
-    if (vowels.includes(char)) {
-      count++;
-    }
-  }
-  return count;
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countVowels("rahul verma")); // Output: 4
+
+
+// ----------------------
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
 }
 
-console.log(countVowels("rahul verma")); // Output: 4
+console.log(reverseString("hello")); // "olleh"
