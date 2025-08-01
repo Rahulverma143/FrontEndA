@@ -216,14 +216,26 @@
 // console.log(isPalindrome("madam")); // true
 
 // --------------------
-for (let i = 1; i <= 20; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
+
+
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+
+// ---------------------------
+
+function countVowels(str) {
+  let matches = str.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
 }
+
+console.log(countVowels("javascript")); // 3
