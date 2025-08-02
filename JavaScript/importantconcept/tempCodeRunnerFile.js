@@ -244,7 +244,15 @@
 // --------------------------------
 
 
-const isEven = (num) => num % 2 === 0;
+// const isEven = (num) => num % 2 === 0;
 
-console.log(isEven(4)); // true
-console.log(isEven(7)); // false
+// console.log(isEven(4)); // true
+// console.log(isEven(7)); // false
+
+
+// -------------------------------------
+
+const nums = [1, 2, 3, 4, 5, 6];
+const evenNums = nums.filter(n => n % 2 === 0);
+
+console.log(evenNums); // [2, 4, 6]
