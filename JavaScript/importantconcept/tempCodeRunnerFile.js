@@ -233,9 +233,18 @@
 
 // ---------------------------
 
-function countVowels(str) {
-  let matches = str.match(/[aeiou]/gi);
-  return matches ? matches.length : 0;
-}
+// function countVowels(str) {
+//   let matches = str.match(/[aeiou]/gi);
+//   return matches ? matches.length : 0;
+// }
 
-console.log(countVowels("javascript")); // 3
+// console.log(countVowels("javascript")); // 3
+
+
+// --------------------------------
+
+
+const isEven = (num) => num % 2 === 0;
+
+console.log(isEven(4)); // true
+console.log(isEven(7)); // false
