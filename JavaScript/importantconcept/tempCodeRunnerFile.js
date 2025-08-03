@@ -252,7 +252,17 @@
 
 // -------------------------------------
 
-const nums = [1, 2, 3, 4, 5, 6];
-const evenNums = nums.filter(n => n % 2 === 0);
+// const nums = [1, 2, 3, 4, 5, 6];
+// const evenNums = nums.filter(n => n % 2 === 0);
 
-console.log(evenNums); // [2, 4, 6]
+// console.log(evenNums); // [2, 4, 6]
+
+
+// -------------------------
+
+const multiply = (a, b) => {
+  let result = a * b;
+  return result;
+};
+
+console.log(multiply(3, 4)); // 12
