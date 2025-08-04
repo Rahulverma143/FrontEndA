@@ -270,7 +270,16 @@
 
 // ------------------------------------------
 
-function greet(name) {
-  return "Hello, " + name;
+// function greet(name) {
+//   return "Hello, " + name;
+// }
+// console.log(greet("Rahul"));
+
+
+// -----------------------------------------
+
+function greetUser(name, callback) {
+  console.log("Hi " + name);
+  callback();
 }
-console.log(greet("Rahul"));
+greetUser("Rahul", () => console.log("Welcome!"));
