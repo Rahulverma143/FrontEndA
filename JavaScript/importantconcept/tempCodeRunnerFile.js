@@ -278,8 +278,27 @@
 
 // -----------------------------------------
 
-function greetUser(name, callback) {
-  console.log("Hi " + name);
-  callback();
+// function greetUser(name, callback) {
+//   console.log("Hi " + name);
+//   callback();
+// }
+// greetUser("Rahul", () => console.log("Welcome!"));
+
+
+// ------------------------------------------
+
+
+// 1. Check if a Number is Prime in JavaScript
+
+function isPrime(num) {
+    if (num <= 1) return false;
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
 }
-greetUser("Rahul", () => console.log("Welcome!"));
+
+// Example usage:
+console.log(isPrime(7));  // true
+console.log(isPrime(10)); // false
