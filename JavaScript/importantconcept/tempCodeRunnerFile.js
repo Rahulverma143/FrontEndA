@@ -308,12 +308,34 @@
 
 // Print All Prime Numbers from 1 to N
 
-const isPrime = (num) => {
-    if (num <= 1) return false;
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) return false;
-    }
-    return true;
-};
+// const isPrime = (num) => {
+//     if (num <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// };
 
-console.log(isPrime(13)); // true
+// console.log(isPrime(13)); // true
+
+
+// --------------------------------
+
+// Code to Check Niven Number
+
+function isNiven(num) {
+    let sum = 0;
+    let temp = num;
+
+    while (temp > 0) {
+        sum += temp % 10; // extract last digit and add
+        temp = Math.floor(temp / 10); // remove last digit
+    }
+
+    return num % sum === 0;
+}
+
+// Example usage
+console.log(isNiven(18)); // true
+console.log(isNiven(23)); // false
+console.log(isNiven(21)); // true
