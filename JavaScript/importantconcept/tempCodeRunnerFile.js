@@ -260,9 +260,17 @@
 
 // -------------------------
 
-const multiply = (a, b) => {
-  let result = a * b;
-  return result;
-};
+// const multiply = (a, b) => {
+//   let result = a * b;
+//   return result;
+// };
 
-console.log(multiply(3, 4)); // 12
+// console.log(multiply(3, 4)); // 12
+
+
+// ------------------------------------------
+
+function greet(name) {
+  return "Hello, " + name;
+}
+console.log(greet("Rahul"));
