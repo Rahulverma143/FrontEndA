@@ -290,15 +290,30 @@
 
 // 1. Check if a Number is Prime in JavaScript
 
-function isPrime(num) {
-    if (num <= 1) return false;
+// function isPrime(num) {
+//     if (num <= 1) return false;
 
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+
+// // Example usage:
+// console.log(isPrime(7));  // true
+// console.log(isPrime(10)); // false
+
+
+// -------------------------------------
+
+// Print All Prime Numbers from 1 to N
+
+const isPrime = (num) => {
+    if (num <= 1) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) return false;
     }
     return true;
-}
+};
 
-// Example usage:
-console.log(isPrime(7));  // true
-console.log(isPrime(10)); // false
+console.log(isPrime(13)); // true
