@@ -323,19 +323,22 @@
 
 // Code to Check Niven Number
 
-function isNiven(num) {
-    let sum = 0;
-    let temp = num;
+// function isNiven(num) {
+//     let sum = 0;
+//     let temp = num;
 
-    while (temp > 0) {
-        sum += temp % 10; // extract last digit and add
-        temp = Math.floor(temp / 10); // remove last digit
-    }
+//     while (temp > 0) {
+//         sum += temp % 10; // extract last digit and add
+//         temp = Math.floor(temp / 10); // remove last digit
+//     }
 
-    return num % sum === 0;
-}
+//     return num % sum === 0;
+// }
 
-// Example usage
-console.log(isNiven(18)); // true
-console.log(isNiven(23)); // false
-console.log(isNiven(21)); // true
+// // Example usage
+// console.log(isNiven(18)); // true
+// console.log(isNiven(23)); // false
+// console.log(isNiven(21)); // true
+
+// ------------------------------------
+
