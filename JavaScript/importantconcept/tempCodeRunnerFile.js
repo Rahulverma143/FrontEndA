@@ -351,8 +351,13 @@
 
 // ------------------------
 
-function greet(name) {
-  return "Hello, " + name;
-}
+// function greet(name) {
+//   return "Hello, " + name;
+// }
 
-console.log(greet("Rahul"));  // Hello, Rahul
+// console.log(greet("Rahul"));  // Hello, Rahul
+
+// --------------------------------------
+
+let fruits = ["apple", "banana", "mango"];
+console.log(fruits[1]);  // banana
