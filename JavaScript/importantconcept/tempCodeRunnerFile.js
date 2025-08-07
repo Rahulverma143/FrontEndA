@@ -336,9 +336,9 @@
 // }
 
 // Example usage
-console.log(isNiven(18)); // true
-console.log(isNiven(23)); // false
-console.log(isNiven(21)); // true
+// console.log(isNiven(18)); // true
+// console.log(isNiven(23)); // false
+// console.log(isNiven(21)); // true
 
 // ------------------------------------
 
