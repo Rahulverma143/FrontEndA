@@ -347,3 +347,12 @@
 //   sum += i;
 // }
 // console.log("Sum:", sum);
+
+
+// ------------------------
+
+function greet(name) {
+  return "Hello, " + name;
+}
+
+console.log(greet("Rahul"));  // Hello, Rahul
