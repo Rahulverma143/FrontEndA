@@ -371,12 +371,20 @@
 // ----------------------------------
 
 
-async function fetchData() {
-  try {
-    let data = await new Promise(resolve => setTimeout(() => resolve("Done!"), 2000));
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-fetchData();
+// async function fetchData() {
+//   try {
+//     let data = await new Promise(resolve => setTimeout(() => resolve("Done!"), 2000));
+//     console.log(data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+// fetchData();
+
+// ------------------------------
+
+let fast = new Promise(resolve => setTimeout(() => resolve("Fast"), 1000));
+let slow = new Promise(resolve => setTimeout(() => resolve("Slow"), 3000));
+
+Promise.race([fast, slow])
+  .then(result => console.log(result)); // "Fast"
