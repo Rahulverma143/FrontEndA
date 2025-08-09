@@ -369,3 +369,14 @@
 // console.log(add(5, 3)); // 8
 
 // ----------------------------------
+
+
+async function fetchData() {
+  try {
+    let data = await new Promise(resolve => setTimeout(() => resolve("Done!"), 2000));
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+fetchData();
