@@ -391,3 +391,9 @@
 
 
   // --------------------------------------------------------
+
+  async function example() {
+  let result = await Promise.resolve("Hello");
+  console.log(result); // Hello
+}
+example();
