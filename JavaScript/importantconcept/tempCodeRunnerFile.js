@@ -392,14 +392,14 @@
 
   // --------------------------------------------------------
 
-  async function example() {
-  let result = await Promise.resolve("Hello");
-  console.log(result); // Hello
-}
-example();
+//   async function example() {
+//   let result = await Promise.resolve("Hello");
+//   console.log(result); // Hello
+// }
+// example();
 
-// ----------------------------------
-// Works in top-level ES module
-let data = await fetch('https://jsonplaceholder.typicode.com/posts/1')
-  .then(res => res.json());
-console.log(data);
+// // ----------------------------------
+// // Works in top-level ES module
+// let data = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+//   .then(res => res.json());
+// console.log(data);
