@@ -403,3 +403,14 @@
 // let data = await fetch('https://jsonplaceholder.typicode.com/posts/1')
 //   .then(res => res.json());
 // console.log(data);
+
+
+// --------------------------------------
+
+async function test() {
+  console.log("A");
+  await Promise.resolve();
+  console.log("B");
+}
+test();
+console.log("C");
