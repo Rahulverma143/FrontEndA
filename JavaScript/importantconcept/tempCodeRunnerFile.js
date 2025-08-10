@@ -397,3 +397,9 @@
   console.log(result); // Hello
 }
 example();
+
+// ----------------------------------
+// Works in top-level ES module
+let data = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(res => res.json());
+console.log(data);
