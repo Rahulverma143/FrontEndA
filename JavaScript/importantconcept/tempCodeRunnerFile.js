@@ -439,8 +439,16 @@
 
 // -----------------------
 
-function greet(name, callback) {
-    console.log("Hello " + name);
-    callback();
-}
-greet("Rahul", () => console.log("Welcome!"));
+// function greet(name, callback) {
+//     console.log("Hello " + name);
+//     callback();
+// }
+// greet("Rahul", () => console.log("Welcome!"));
+
+
+// ------------------------------------
+
+let a = { name: "Rahul" };
+let b = a;
+a.name = "Verma";
+console.log(b.name);
