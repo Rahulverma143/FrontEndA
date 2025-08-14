@@ -448,7 +448,15 @@
 
 // ------------------------------------
 
-let a = { name: "Rahul" };
-let b = a;
-a.name = "Verma";
-console.log(b.name);
+// let a = { name: "Rahul" };
+// let b = a;
+// a.name = "Verma";
+// console.log(b.name);
+
+
+// --------------------------------
+
+let arr = [1, 2, 3];
+arr[10] = 99;
+console.log(arr.length);
+console.log(arr[5]);
