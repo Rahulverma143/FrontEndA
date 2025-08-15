@@ -464,19 +464,41 @@
 
 // ----------------------------------
 
-let num = 153; // you can change this number
-let sum = 0;
-let temp = num;
-let digits = num.toString().length;
+// let num = 153; // you can change this number
+// let sum = 0;
+// let temp = num;
+// let digits = num.toString().length;
 
-while (temp > 0) {
-    let digit = temp % 10;
-    sum += digit ** digits;
-    temp = Math.floor(temp / 10);
-}
+// while (temp > 0) {
+//     let digit = temp % 10;
+//     sum += digit ** digits;
+//     temp = Math.floor(temp / 10);
+// }
 
-if (sum === num) {
-    console.log(num + " is an Armstrong number");
-} else {
-    console.log(num + " is not an Armstrong number");
+// if (sum === num) {
+//     console.log(num + " is an Armstrong number");
+// } else {
+//     console.log(num + " is not an Armstrong number");
+// }
+
+
+// -----------------------------------------
+
+let start = 1;
+let end = 1000;
+
+for (let num = start; num <= end; num++) {
+    let sum = 0;
+    let temp = num;
+    let digits = num.toString().length;
+
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += digit ** digits;
+        temp = Math.floor(temp / 10);
+    }
+
+    if (sum === num) {
+        console.log(num);
+    }
 }
