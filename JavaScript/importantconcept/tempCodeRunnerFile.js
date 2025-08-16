@@ -580,3 +580,11 @@
 // console.log(isPalindrome(123));  // false
 
 // ---------------------------------------
+
+function isPalindromeString(str) {
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+console.log(isPalindromeString("madam"));   // true
+console.log(isPalindromeString("hello"));   // false
