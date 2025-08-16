@@ -549,12 +549,15 @@
 
 // ------------------------------------------------------
 
-function isPalindrome(num) {
-  let str = num.toString();
-  let reversed = str.split("").reverse().join("");
-  return str === reversed;
-}
+// function isPalindrome(num) {
+//   let str = num.toString();
+//   let reversed = str.split("").reverse().join("");
+//   return str === reversed;
+// }
 
-// Example
-console.log(isPalindrome(121));  // true
-console.log(isPalindrome(123));  // false
+// // Example
+// console.log(isPalindrome(121));  // true
+// console.log(isPalindrome(123));  // false
+
+
+// ----------------------------------------
