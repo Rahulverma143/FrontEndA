@@ -591,3 +591,12 @@
 
 
 // ------------------------------------
+
+function isPalindromeIgnoreCase(str) {
+  str = str.toLowerCase();
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+console.log(isPalindromeIgnoreCase("RaceCar")); // true
+console.log(isPalindromeIgnoreCase("Java"));    // false
