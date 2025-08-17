@@ -604,27 +604,18 @@
 
 // ----------------------------------------
 
-function isPalindromeClean(str) {
-  str = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-  let reversed = str.split("").reverse().join("");
-  return str === reversed;
-}
+// function isPalindromeClean(str) {
+//   str = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+//   let reversed = str.split("").reverse().join("");
+//   return str === reversed;
+// }
 
-console.log(isPalindromeClean("A man, a plan, a canal: Panama")); // true
-console.log(isPalindromeClean("Hello World"));                    // false
+// console.log(isPalindromeClean("A man, a plan, a canal: Panama")); // true
+// console.log(isPalindromeClean("Hello World"));                    // false
 
 
 // -------------------------------------
 
-function isNumberPalindrome(num) {
-  let str = num.toString();
-  return str === str.split("").reverse().join("");
-}
-
-console.log(isNumberPalindrome(1221));  // true
-console.log(isNumberPalindrome(1234));  // false
-
-// --------------------------------
 
 // function palindromeInRange(start, end) {
 //   for (let i = start; i <= end; i++) {
