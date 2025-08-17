@@ -626,14 +626,17 @@ console.log(isNumberPalindrome(1234));  // false
 
 // --------------------------------
 
-function palindromeInRange(start, end) {
-  for (let i = start; i <= end; i++) {
-    let str = i.toString();
-    if (str === str.split("").reverse().join("")) {
-      console.log(i);
-    }
-  }
-}
+// function palindromeInRange(start, end) {
+//   for (let i = start; i <= end; i++) {
+//     let str = i.toString();
+//     if (str === str.split("").reverse().join("")) {
+//       console.log(i);
+//     }
+//   }
+// }
 
-palindromeInRange(10, 200);
-// Output: 11, 22, 33, 44, ... 191
+// palindromeInRange(10, 200);
+// // Output: 11, 22, 33, 44, ... 191
+
+
+// ----------------------------------------------
