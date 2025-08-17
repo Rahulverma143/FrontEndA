@@ -631,3 +631,14 @@
 
 
 // ----------------------------------------------
+
+
+function isNumberPalindrome(num) {
+  let str = num.toString();
+  return str === str.split("").reverse().join("");
+}
+
+console.log(isNumberPalindrome(1221));  // true
+console.log(isNumberPalindrome(1234));  // false
+
+// --------------------------------
