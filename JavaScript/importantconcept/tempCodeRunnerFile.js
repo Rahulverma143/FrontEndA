@@ -642,3 +642,7 @@
 // console.log(isNumberPalindrome(1234));  // false
 
 // --------------------------------
+
+let checkEvenOdd = (n) => (n % 2 === 0 ? "Even" : "Odd");
+console.log(checkEvenOdd(7)); // Odd
+console.log(checkEvenOdd(10)); // Even
