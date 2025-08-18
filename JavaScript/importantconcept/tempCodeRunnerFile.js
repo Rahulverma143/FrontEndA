@@ -650,5 +650,8 @@
 
 // ----------------------------------------
 
-let reverseStr = (str) => str.split("").reverse().join("");
-console.log(reverseStr("hello")); // olleh
+// let reverseStr = (str) => str.split("").reverse().join("");
+// console.log(reverseStr("hello")); // olleh
+
+
+// -----------------------------
